@@ -18,6 +18,9 @@
 		75E33DC714D5C80C00EA5094 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E33DAE14D5C80C00EA5094 /* Foundation.framework */; };
 		75E33DCF14D5C80D00EA5094 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 75E33DCD14D5C80D00EA5094 /* InfoPlist.strings */; };
 		75E33DD214D5C80D00EA5094 /* LongLoadingTableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E33DD114D5C80D00EA5094 /* LongLoadingTableTests.m */; };
+		75E33DE514D5C96E00EA5094 /* OHLongLoadingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E33DE314D5C96E00EA5094 /* OHLongLoadingTableViewController.m */; };
+		75E33DE614D5C96E00EA5094 /* OHLongLoadingTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75E33DE414D5C96E00EA5094 /* OHLongLoadingTableViewController.xib */; };
+		75E33DE914D5C98B00EA5094 /* OHLongLoadingTableViewHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E33DE814D5C98B00EA5094 /* OHLongLoadingTableViewHeader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,18 +38,23 @@
 		75E33DAC14D5C80C00EA5094 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		75E33DAE14D5C80C00EA5094 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		75E33DB014D5C80C00EA5094 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		75E33DB414D5C80C00EA5094 /* LongLoadingTable-Info.plist */ = {isa = PBXFileReference; path = "LongLoadingTable-Info.plist"; sourceTree = "<group>"; };
+		75E33DB414D5C80C00EA5094 /* LongLoadingTable-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LongLoadingTable-Info.plist"; sourceTree = "<group>"; };
 		75E33DB614D5C80C00EA5094 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		75E33DB814D5C80C00EA5094 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		75E33DBA14D5C80C00EA5094 /* LongLoadingTable-Prefix.pch */ = {isa = PBXFileReference; path = "LongLoadingTable-Prefix.pch"; sourceTree = "<group>"; };
-		75E33DBB14D5C80C00EA5094 /* OHAppDelegate.h */ = {isa = PBXFileReference; path = OHAppDelegate.h; sourceTree = "<group>"; };
+		75E33DBA14D5C80C00EA5094 /* LongLoadingTable-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LongLoadingTable-Prefix.pch"; sourceTree = "<group>"; };
+		75E33DBB14D5C80C00EA5094 /* OHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OHAppDelegate.h; sourceTree = "<group>"; };
 		75E33DBC14D5C80C00EA5094 /* OHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OHAppDelegate.m; sourceTree = "<group>"; };
 		75E33DC314D5C80C00EA5094 /* LongLoadingTableTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LongLoadingTableTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75E33DC414D5C80C00EA5094 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		75E33DCC14D5C80C00EA5094 /* LongLoadingTableTests-Info.plist */ = {isa = PBXFileReference; path = "LongLoadingTableTests-Info.plist"; sourceTree = "<group>"; };
+		75E33DCC14D5C80C00EA5094 /* LongLoadingTableTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LongLoadingTableTests-Info.plist"; sourceTree = "<group>"; };
 		75E33DCE14D5C80D00EA5094 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		75E33DD014D5C80D00EA5094 /* LongLoadingTableTests.h */ = {isa = PBXFileReference; path = LongLoadingTableTests.h; sourceTree = "<group>"; };
+		75E33DD014D5C80D00EA5094 /* LongLoadingTableTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LongLoadingTableTests.h; sourceTree = "<group>"; };
 		75E33DD114D5C80D00EA5094 /* LongLoadingTableTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LongLoadingTableTests.m; sourceTree = "<group>"; };
+		75E33DE214D5C96E00EA5094 /* OHLongLoadingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHLongLoadingTableViewController.h; sourceTree = "<group>"; };
+		75E33DE314D5C96E00EA5094 /* OHLongLoadingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHLongLoadingTableViewController.m; sourceTree = "<group>"; };
+		75E33DE414D5C96E00EA5094 /* OHLongLoadingTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OHLongLoadingTableViewController.xib; sourceTree = "<group>"; };
+		75E33DE714D5C98B00EA5094 /* OHLongLoadingTableViewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHLongLoadingTableViewHeader.h; sourceTree = "<group>"; };
+		75E33DE814D5C98B00EA5094 /* OHLongLoadingTableViewHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHLongLoadingTableViewHeader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +117,11 @@
 				75E33DBB14D5C80C00EA5094 /* OHAppDelegate.h */,
 				75E33DBC14D5C80C00EA5094 /* OHAppDelegate.m */,
 				75E33DB314D5C80C00EA5094 /* Supporting Files */,
+				75E33DE214D5C96E00EA5094 /* OHLongLoadingTableViewController.h */,
+				75E33DE314D5C96E00EA5094 /* OHLongLoadingTableViewController.m */,
+				75E33DE414D5C96E00EA5094 /* OHLongLoadingTableViewController.xib */,
+				75E33DE714D5C98B00EA5094 /* OHLongLoadingTableViewHeader.h */,
+				75E33DE814D5C98B00EA5094 /* OHLongLoadingTableViewHeader.m */,
 			);
 			path = LongLoadingTable;
 			sourceTree = "<group>";
@@ -215,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75E33DB714D5C80C00EA5094 /* InfoPlist.strings in Resources */,
+				75E33DE614D5C96E00EA5094 /* OHLongLoadingTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +265,8 @@
 			files = (
 				75E33DB914D5C80C00EA5094 /* main.m in Sources */,
 				75E33DBD14D5C80C00EA5094 /* OHAppDelegate.m in Sources */,
+				75E33DE514D5C96E00EA5094 /* OHLongLoadingTableViewController.m in Sources */,
+				75E33DE914D5C98B00EA5094 /* OHLongLoadingTableViewHeader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

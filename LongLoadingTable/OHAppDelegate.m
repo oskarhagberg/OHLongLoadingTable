@@ -3,7 +3,7 @@
 //  LongLoadingTable
 //
 //  Created by Oskar Hagberg on 2012-01-29.
-//  Copyright (c) 2012 Cybercom. All rights reserved.
+//  Copyright (c) 2012 oskarhagberg.com. All rights reserved.
 //
 
 #import "OHAppDelegate.h"
@@ -11,17 +11,25 @@
 @implementation OHAppDelegate
 
 @synthesize window = _window;
+@synthesize tableViewController;
+@synthesize navigationController;
 
 - (void)dealloc
 {
     [_window release];
+    [tableViewController release];
+    [navigationController release];
     [super dealloc];
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
-    // Override point for customization after application launch.
+    
+    self.tableViewController = [[[OHLongLoadingTableViewController alloc] initWithNibName:@"OHLongLoadingTableViewController" bundle:nil] autorelease];
+    self.navigationController = [[[UINavigationController alloc] initWithRootViewController:tableViewController] autorelease];
+    
+    [self.window addSubview:navigationController.view];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
